@@ -3,6 +3,7 @@
     "prettier": "^3.2.5"
   },
   "workspaces": [
-    "./vite"
+    "./vite",
+    "@lib/sheets"
   ]
 }
