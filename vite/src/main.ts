@@ -3,6 +3,11 @@ import { setupAudio } from "./audio.ts";
 import { UI } from "./type";
 import { setupLocalStorage } from "./localStorage.ts";
 import { setupUserExperience } from "./userExperience.ts";
+import { play } from "@lib/player";
+import { First } from "@lib/sheets";
+
+window["first"] = (start?: number, end?: number) =>
+  play(First.slice(start, end));
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML =
   document.getElementById("tpl")!.innerHTML;

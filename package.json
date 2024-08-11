@@ -1,5 +1,10 @@
 {
   "devDependencies": {
     "prettier": "^3.2.5"
-  }
+  },
+  "workspaces": [
+    "./vite",
+    "@lib/sheets",
+    "@lib/player"
+  ]
 }
