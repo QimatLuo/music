@@ -4,7 +4,6 @@
   },
   "workspaces": [
     "./vite",
-    "@lib/sheets",
-    "@lib/player"
+    "@lib/sheets"
   ]
 }

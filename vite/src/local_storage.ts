@@ -1,4 +1,4 @@
-import { UI } from "./type";
+import type { UI } from "./user_experience";
 
 export function setupLocalStorage(ui: UI) {
   Object.values(ui).forEach((dom: HTMLElement) => {
