@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Metronome</title>
+</head>
+
+<body>
+  <template id="tpl">
+    <div>
+      <span>速度</span>
+      <input id="bpm" type="number" value="120" min="30" max="250" />
+    </div>
+    <div>
+      <span>拍/節</span>
+      <input id="interval" type="text" value="4n" />
+    </div>
+    <div>
+      <span>節音</span>
+      <input id="sound_bar" type="number" value="880" min="0" />
+    </div>
+    <div>
+      <span>拍音</span>
+      <input id="sound_meter" type="number" value="440" min="0" />
+    </div>
+    <div>
+      <span>升降</span>
+      <input id="pitch" type="number" value="0" />
+    </div>
+    <div>
+      <button id="toggle" type="button">start</button>
+    </div>
+    <div id="version">GIT_HASH</div>
+    <div>
+      <section id="sheet"></section>
+      <button class="number-0" title="0">0</button>
+      <button class="number-1" title="1">1</button>
+      <button class="number-2" title="2">2</button>
+      <button class="number-3" title="3">3</button>
+      <button class="number-4" title="4">4</button>
+      <button class="number-5" title="5">5</button>
+      <button class="number-6" title="6">6</button>
+      <button class="number-7" title="7">7</button>
+      <button class="accidental-up" title="#">#</button>
+      <button class="accidental-down" title="b">b</button>
+      <button class="accidental-none" title="n">n</button>
+      <button class="octave-h" title="+">+</button>
+      <button class="octave-l" title="-">-</button>
+      <button class="subdivision-2" title="h">2</button>
+      <button class="subdivision-4" title="j">4</button>
+      <button class="subdivision-8" title="k">8</button>
+      <button class="subdivision-16" title="l">16</button>
+      <button class="subdivision-32" title=";">32</button>
+      <button class="previous" title="<ArrowLeft>">prev</button>
+      <button class="next" title="<SPACE> / <ArrowRight>">next</button>
+    </div>
+  </template>
+  <div id="app"></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
